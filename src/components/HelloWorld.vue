@@ -2,6 +2,7 @@
   <div class="hello">
       潘小安记录生活的地方
      <p> 建设中。。。</p>
+     <p> 不知道什么时候回更新。。。</p>
   </div>
 </template>
 
