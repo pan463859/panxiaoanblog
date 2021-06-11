@@ -4,10 +4,10 @@ git pull
 yarn --registry=https://registry.npm.taobao.org/ && yarn build
 
 #删除容器
-docker rm -f blog &> /dev/null
+docker rm -f fivefiveopen &> /dev/null
 
 #启动容器
 docker run -d --restart=on-failure:5\
     -p 8080:80 \
     -v $PWD/dist:/usr/share/nginx/html \
-    --name blog nginx
+    --name fivefiveopen nginx
