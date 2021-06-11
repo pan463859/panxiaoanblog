@@ -9,5 +9,6 @@ docker rm -f fivefiveopen &> /dev/null
 #启动容器
 docker run -d --restart=on-failure:5\
     -p 8080:80 \
+    -v /usr/local/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
     -v $PWD/dist:/usr/share/nginx/html \
     --name fivefiveopen nginx
